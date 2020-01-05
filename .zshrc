@@ -69,13 +69,14 @@ ZSH_THEME="kardan"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-git
+#git
 docker
 aws
 cp
 docker-compose
 emoji
 go
+common-aliases
 kubectl
 pip
 python
