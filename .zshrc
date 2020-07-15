@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/$USERNAME/.oh-my-zsh"
+export ZSH="/Users/leejonchapman/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -12,7 +12,7 @@ ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -33,7 +33,7 @@ ZSH_THEME="robbyrussell"
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -64,35 +64,11 @@ ZSH_THEME="robbyrussell"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-#git
-docker
-aws
-cp
-docker-compose
-emoji
-go
-common-aliases
-kubectl
-pip
-python
-ssh-agent
-systemadmin
-tmux
-tmuxinator
-vscode
-vim-interaction
-yum
-zsh-navigation-tools
-zsh_reload
-dnf
-)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git)
 
 # User configuration
 
@@ -119,3 +95,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+## ALIAS	MACOS	##
+alias k='microk8s kubectl '
+alias m='multipass '
+alias pro='cd /Documents/Computing/Programming'
+alias p='python3.8'
+source $ZSH/oh-my-zsh.sh
+
+
